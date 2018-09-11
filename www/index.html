@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Distance between two locations</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+    </head>
+    <body class="home">
+        <article class="textLeft" id="main">
+            <h1>Travel Distance Calculator</h1>
+            <p>Enter two coordinate sets below and hit submit to return the distance between the two places.</p>
+            <div>
+                <form method="POST" id="testForm">
+                  <label>lat1:</label>
+                  <input type="text" name="lat1"><br>
+                  <label>long1:</label>
+                  <input type="text" name="long1">
+                  <br>
+                  <hr>
+                  <br>
+                  <label>lat2:</label>
+                  <input type="text" name="lat2"><br>
+                  <label>long2:</label>
+                  <input type="text" name="long2"><br>
+                  <button type="submit" id="submitButton">Submit</button>
+                </form>
+            </div>
+            <section id="post-results-container">
+              <h2>Resultant Distance</h2>
+              <p>Here is the distance between the two places</p>
+              <ul class="data"></ul>
+            </section>
+        </article>
+      <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+      <script type="text/javascript" src="js/form-handler.js"></script>
+    </body>
+</html>
